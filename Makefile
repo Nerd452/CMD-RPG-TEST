@@ -13,6 +13,9 @@ build:
 test:
 	java -jar lib/* execute --class-path bin --scan-class-path
 
+testMain:
+	java -cp bin test/MainTest
+
 #clears previous javadoc, generates new javadoc
 doc: 
 	javadoc src/**/*.java -d docs/javadoc
