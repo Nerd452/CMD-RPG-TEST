@@ -12,6 +12,9 @@ public interface OS{
      */
     public abstract void clear();
 
-
+    /**
+     * this method returns the name of the operating system (linux, windows, e.t.c.)
+     */
+    public abstract String getOS();
 
 }

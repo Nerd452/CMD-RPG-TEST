@@ -1,0 +1,24 @@
+
+@startuml
+
+skinparam classAttributeIconSize 0
+
+
+
+interface OS {
+    
+    +Clear()
+
+}
+
+class LinuxOS{
+
+
+}
+
+LinuxOS  ..|> OS
+
+@enduml
+
+
+
