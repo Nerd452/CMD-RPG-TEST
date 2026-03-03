@@ -37,8 +37,8 @@ public class LinuxOS implements OS{
             //Ill explain this in steps cause Ill Forget
             //STEP1 ~ new ProcessBuilder("clear") :: creates a ProcessBuilder to for the "clear" command
             //STEP2 ~ .inheritIO() :: 
-            //STEP3 ~ .start() ::
-            //STEP4 ~ .waitFor() :: 
+            //STEP3 ~ .start() :: returns and starts a Process
+            //STEP4 ~ .waitFor() :: pauses the process, looks for other threads, and lets them go first if necessary
             new ProcessBuilder("clear").inheritIO().start().waitFor();
         } catch (Exception e){
             System.out.println("Something Went Wrong");

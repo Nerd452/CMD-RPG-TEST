@@ -14,6 +14,7 @@ public interface OS{
 
     /**
      * this method returns the name of the operating system (linux, windows, e.t.c.)
+     * @return - returns the name of the operating system as a string
      */
     public abstract String getOS();
 
