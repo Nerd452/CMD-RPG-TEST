@@ -1,5 +1,7 @@
+app
 graphics
 os
+terminalUtils
 test
 testApps
 utils

@@ -8,6 +8,8 @@ default: build
 build:
 	javac src/**/*.java -cp "lib/*:src" -d bin
 
+run:
+	java -cp "bin:lib/jline-3.30.7.jar" app/rpgGame
 
 #runs all junit tests
 test:
@@ -18,7 +20,7 @@ testMain:
 
 #clears previous javadoc, generates new javadoc
 doc: 
-	javadoc src/**/*.java -d docs/javadoc
+	javadoc -cp "lib/jline-3.30.7.jar" src/**/*.java -d docs/javadoc
 
 #clears the javadoc
 clearD:
