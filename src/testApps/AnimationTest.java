@@ -2,44 +2,46 @@ package testApps;
 
 
 //ProjectImports
-import os.LinuxOS;
-import os.UsableOS;
 import static utils.Timer.*;
-import static graphics.output.*;
-
+import graphics.Frame;
+import graphics.TerminalImage;
 
 public class AnimationTest{
 
     public static void main(String[] args){
         //Arrange variables
-        LinuxOS UOS = new LinuxOS();
-        UsableOS<LinuxOS> OS = new UsableOS<LinuxOS>(UOS);
+        TerminalImage I1 = new TerminalImage("Welcome To Animation Testing");
+        TerminalImage I2 = new TerminalImage("Please Hold For Loading Bar Test");
         
-        //Act
-        OS.clear();
-        writeln(OS.getOS());
-        write("Test Animation");
-        
+        TerminalImage[] IM1= {I1, I2};
+
+        Frame F1 = new Frame(IM1);
+       
+        //ACT
+        F1.render();
         waitSEC(3);
-        OS.clear();
-        
-        write("Animation 1 ~ Loading bar\n\n");
-        String loadedBars = "";
-        String unloadedBars = "--------------------";
-        for(int i = 1; i <= 20; i++){
-            loadedBars += "*";
-            unloadedBars = unloadedBars.substring(0,(20-i));
-            uwrite("[" + loadedBars + unloadedBars + "]");
-            waitMIL(400);
-            
+
+
+
+        I1.setImage("Now Presenting...\nLoadingBar");
+        String loaded = "";
+        String unloaded = "--------------------";
+        IM1[0] = I1;
+
+        for(int i = 1; i <= 21; i++){
+            loaded += "*";
+            unloaded = unloaded.substring(0, 21-i);
+            I2.setImage("[" + loaded + unloaded + "]");
+            IM1[1] = I2;
+            F1.setFrame(IM1);
+            F1.render();
+            waitMIL(500);
         }
-
-        waitSEC(3);
-        writeln("");
         
-        System.exit(0);
 
-    }
+        //Exit
+        System.exit(0);
+     }
 
 }
 
