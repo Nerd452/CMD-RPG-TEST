@@ -16,7 +16,14 @@ class LinuxOS{
 
 }
 
+class UsableOS{
+    
+
+}
+
+
 LinuxOS  ..|> OS
+UsableOS ..|> OS
 
 @enduml
 
