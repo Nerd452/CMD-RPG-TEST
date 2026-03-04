@@ -19,14 +19,14 @@
 <h2>Makefile Commands</h2>
 <p>
 - default :: runs the build command <br>
-- <br>
-- <br>
-- <br>
-- <br>
-- <br>
-- <br>
-- <br>
-- <br>
+- build :: compiles the java program <br>
+- test :: runs all junit tests<br>
+- testMain :: runs the MainTest application<br>
+- doc :: generates javadoc<br>
+- clearD :: removes the javadoc folder<br>
+- clearB :: clears the bin<br>
+- clear :: runs clearB and clearD<br>
+- uml :: moves alll png files from the PUML folder to the UML folder<br>
 </p>
 
 
