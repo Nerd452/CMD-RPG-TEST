@@ -7,7 +7,10 @@
 -OPERATING SYSTEM :: good for now<br>
 -GRAPHICS SYSTEM :: good for now<br>
 -UTILITES :: good for now <br>
--KEYBOARD PRESSES :: STUFF TO DO
+-KEYBOARD PRESSES :: STUFF TO DO <br>
+-APP :: Work On Main Menu <br>
+-GAME UTILS :: MAKE PLAYER OBJECT <br>
+-SAVE UTILS :: reasearch how
 </p>
 
 <br>
@@ -32,7 +35,21 @@
 <br>
 <h2>KeyBoard Presses TODO</h2>
 <p>
--reasearch how to detect keyboard presses
+-Nothing Right now
 </p>
 
+
+<br>
+<h2>App TODO</h2>
+<p>
+-Build Main Menu <br>
+-Build Combat Test 
+</p>
+
+
+<br>
+<h2>Game Utils TODO</h2>
+<p>
+-Work on player object
+</p>
 
