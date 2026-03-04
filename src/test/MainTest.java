@@ -3,6 +3,7 @@ package test;
 //Project Imports
 import os.LinuxOS;
 import static graphics.output.write;
+import static graphics.output.uwrite;
 
 //Java Library Imports
 import java.util.concurrent.TimeUnit;
@@ -53,6 +54,15 @@ public class MainTest{
         System.out.print("clearTest: " + clearTest);
 
         write("\nwriteTest: True\n");
+        
+        try{
+            write("uwriteTest: False");
+            TimeUnit.SECONDS.sleep(3);
+            uwrite("uwriteTest: True\n");
+        } catch(Exception e){
+            write("uwriteTest: False");
+        }
+
   
     }
 
