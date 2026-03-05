@@ -6,7 +6,7 @@
 <p>
 -OPERATING SYSTEM :: good for now<br>
 -GRAPHICS SYSTEM :: good for now<br>
--UTILITES :: good for now <br>
+-UTILITES :: work on MusicPlayer <br>
 -KEYBOARD PRESSES :: STUFF TO DO <br>
 -APP :: Work On Main Menu <br>
 -GAME UTILS :: MAKE PLAYER OBJECT <br>
@@ -28,7 +28,7 @@
 <br>
 <h2>Utilities TODO</h2>
 <p>
--Nothing Right now
+-Build the Music Player
 </p>
 
 
